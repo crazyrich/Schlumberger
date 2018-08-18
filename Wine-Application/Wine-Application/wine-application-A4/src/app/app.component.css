@@ -1,0 +1,17 @@
+
+.app-container {
+    width: 100%;
+    display: flex;
+}
+
+.app-container>div:nth-child(1),
+.app-container>div:nth-child(3) {
+    flex-basis: 0%;
+}
+
+.wine-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: #d3d3d361;
+}

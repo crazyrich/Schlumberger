@@ -1,0 +1,65 @@
+<div class="wine-filter">
+    <form class="wine-form">
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" id="country" placeholder="Search by country"
+            (input)="wineByCountry($event)">
+        </div><div class="form-group">
+            <label for="province">Province</label>
+            <input type="text" class="form-control" id="province" placeholder="Search by province"
+             (input)="wineByProvince($event)" >
+        </div>
+        <div class="form-group">
+            <label for="regions">Regions</label>
+            <input type="text" class="form-control" id="regions" placeholder="Search by regions"
+            (input)="wineByRegion($event)">
+        </div>
+    </form>
+</div>
+
+<div class="wine-list-container">
+    <div class="wine-card" *ngFor="let wine of wineList | wineFilter:criteria">
+        <div class="img-bottle">
+            <img src="../../assets/wine-bottle.png">
+        </div>
+        <div class="details">
+            <div class="wine-heading">
+                <h4>{{wine.designation}}</h4>
+            </div>
+            <div class="wine-detail">
+                <div class="detail-box">
+                    <label>Country</label>
+                    <span>{{wine.country}}</span>
+                </div>
+                <div class="detail-box">
+                    <label>Region</label>
+                    <span>{{wine.region_1}}, {{wine.region_2}}</span>
+                </div>
+                <div class="detail-box">
+                    <label>Province</label>
+                    <span>{{wine.province}}</span>
+
+                </div>
+                <div class="detail-box">
+                    <label>Variety</label>
+                    <span>{{wine.variety}}</span>
+
+                </div>
+                <div class="detail-box">
+                    <label>Winery</label>
+                    <span>{{wine.winery}}</span>
+
+                </div>
+                <div class="detail-box">
+                    <label>Points</label>
+                    <span>{{wine.points}}</span>
+
+                </div>
+                <div class="detail-box">
+                    <label>Price</label>
+                    <span>{{wine.price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

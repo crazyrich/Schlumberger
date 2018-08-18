@@ -1,0 +1,48 @@
+.wine-list-container {
+    height: 573px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wine-form{
+    display: flex;
+    justify-content: space-between;
+}
+.wine-card {
+    display: flex;
+    border-radius: .5rem;
+    width: 720px;
+    height: 130px;
+    position: relative;
+    padding: 0.15rem;
+    flex-flow: wrap;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+
+.img-bottle {
+    padding-top: 25px;
+}
+
+.wine-detail {
+    display: flex;
+}
+
+.details {
+    width: 90%;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+}
+
+label {
+    color: #498a4b;
+    font-size: 10px;
+    font-weight: 700;
+}
