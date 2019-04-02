@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to ThoughtWorks Fun Game!
+  </h1>
+</div>
+<h2>Follow the steps: </h2>
+<ul>
+  <!-- Stage 0/4 -->
+  <li (click)="getInstructions()">
+    <input type="button" value="0. Get Instructions">
+    <p *ngIf="info !== undefined && info !== null">
+  <li>{{info.instructions}}</li>
+  <li>{{info.statement}}</li>
+  </p>
+  </li>
+
+  <!-- Stage 1/4 -->
+  <li (click)="task_1()">
+    <input type="button" value="1.">
+    <p *ngIf="taskData !== undefined && taskData !== null">
+  <li>{{taskData.message}}</li>
+  <li>{{taskData.message}}</li>
+  </p>
+  </li>
+
+  <!-- Stage 2/4 -->
+  <li (click)="task_2()">
+    <input type="button" value="2. ">
+    <p *ngIf="taskData !== undefined && taskData !== null">
+  <li>{{taskData.message}}</li>
+  <li>{{taskData.message}}</li>
+  </p>
+  </li>
+
+  <!-- Stage 3/4 -->
+  <li (click)="task_3()">
+    <input type="button" value="3. ">
+    <p *ngIf="taskData !== undefined && taskData !== null">
+  <li>{{taskData.message}}</li>
+  <li>{{taskData.message}}</li>
+  </p>
+  </li>
+
+  <!-- Stage 4/4 -->
+  <li (click)="task_4()">
+    <input type="button" value="4. ">
+    <p *ngIf="taskData !== undefined && taskData !== null">
+  <li>{{taskData.message}}</li>
+  <li>{{taskData.message}}</li>
+  </p>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
